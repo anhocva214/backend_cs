@@ -8,21 +8,21 @@ import { ApolloDriver, ApolloDriverConfig } from "@nestjs/apollo";
 import { TypeOrmModule, TypeOrmModuleOptions } from "@nestjs/typeorm";
 import { ConfigModule, ConfigService } from "@nestjs/config";
 import { UsersModule } from "./users/users.module";
-import { OrderModule } from './order/order.module';
-import { OrderDimensionModule } from './order-dimension/order-dimension.module';
-import { OrderDestinationModule } from './order-destination/order-destination.module';
-import { ReceiverModule } from './receiver/receiver.module';
-import { StatusModule } from './status/status.module';
-import { VehicleModule } from './vehicle/vehicle.module';
-import { VehicleTypeModule } from './vehicle-type/vehicle-type.module';
-import { OrderDriverVehicleModule } from './order-driver-vehicle/order-driver-vehicle.module';
-import { ServiceAdditionModule } from './service-addition/service-addition.module';
-import { SocketModule } from './socket/socket.module';
+import { OrderModule } from "./order/order.module";
+import { OrderDimensionModule } from "./order-dimension/order-dimension.module";
+import { OrderDestinationModule } from "./order-destination/order-destination.module";
+import { ReceiverModule } from "./receiver/receiver.module";
+import { StatusModule } from "./status/status.module";
+import { VehicleModule } from "./vehicle/vehicle.module";
+import { VehicleTypeModule } from "./vehicle-type/vehicle-type.module";
+import { OrderDriverVehicleModule } from "./order-driver-vehicle/order-driver-vehicle.module";
+import { ServiceAdditionModule } from "./service-addition/service-addition.module";
+import { SocketModule } from "./socket/socket.module";
 
-import { WardModule } from './ward/ward.module';
-import { DistrictModule } from './district/district.module';
-import { ProvincesModule } from './provinces/provinces.module';
-import { OrderPickupAddressModule } from './order-pickup-address/order-pickup-address.module';
+import { WardModule } from "./ward/ward.module";
+import { DistrictModule } from "./district/district.module";
+import { ProvincesModule } from "./provinces/provinces.module";
+import { OrderPickupAddressModule } from "./order-pickup-address/order-pickup-address.module";
 
 @Module({
   imports: [
@@ -68,7 +68,7 @@ import { OrderPickupAddressModule } from './order-pickup-address/order-pickup-ad
     VehicleTypeModule,
     OrderDriverVehicleModule,
     ServiceAdditionModule,
-    SocketModule
+    SocketModule,
   ],
   controllers: [AppController],
   providers: [AppService],

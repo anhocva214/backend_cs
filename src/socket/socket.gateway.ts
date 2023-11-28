@@ -10,7 +10,7 @@ export class SocketGateway implements OnGatewayConnection {
   constructor(private readonly socketService: SocketService) {}
 
   handleConnection(socket: Socket): void {
-    this.socketService.handleConnection(socket);
+    this.socketService.handleConnection(socket)
   }
 
   // Implement other Socket.IO event handlers and message handlers
